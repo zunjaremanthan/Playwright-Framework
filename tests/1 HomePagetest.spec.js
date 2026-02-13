@@ -10,6 +10,16 @@ test('Home Page',async({page})=>{
    await expect(page).toHaveURL('https://www.demoblaze.com/#')
    await page.close()
 })
+test('Home2 Page',async({page})=>{
+
+   await page.goto('https://www.demoblaze.com/#')
+
+   const pagetitle=await page.title();
+   console.log('page title is',pagetitle)
+   await expect(page).toHaveTitle('STORE')
+   await expect(page).toHaveURL('https://www.demoblaze.com/#')
+   await page.close()
+})
 
 //to run the code open terminal and paste below code
 
