@@ -7,7 +7,7 @@ test('Home Page',async({page})=>{
    const pagetitle=await page.title();
    console.log('page title is',pagetitle)
    await expect(page).toHaveTitle('STORE')
-   await expect(page).toHaveURL('https://www.demoblaze.com/#')
+   await expect(page).toHaveURL('https://www.demoblaze.com/#/')
    await page.close()
 })
 test('Home2 Page',async({page})=>{
