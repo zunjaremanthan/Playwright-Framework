@@ -1,6 +1,6 @@
 const{test, expect}=require('@playwright/test')
     
-    test.only('Page Screenshot', async({page})=>{
+    test('Page Screenshot', async({page})=>{
 
     await page.goto('https://www.demoblaze.com/')
     await page.waitForTimeout(2000)

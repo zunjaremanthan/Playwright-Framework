@@ -1,5 +1,5 @@
 const{test, expect}=require('@playwright/test')
-test.only('UploadSingleFiles', async({page})=>{
+test('UploadSingleFiles', async({page})=>{
 
     await page.goto('https://testautomationpractice.blogspot.com/')
 
