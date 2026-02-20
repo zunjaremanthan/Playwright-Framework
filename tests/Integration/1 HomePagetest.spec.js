@@ -15,4 +15,4 @@ test('Home Page',async({page})=>{
 //npx playwright test tests/Annotations.spec.js(runs on many browsers)
 //npx playwright test tests/Annotations.spec.js --project chromium (runs on specific browsers)
 //npx playwright test tests/Annotations.spec.js --project chromium --headed (runs on specific browsers and run on headed mode)
-//just chaking whether the changes is happening in the github oe not
+//just chaking whether the changes is happening in the github oe not--chnages done
