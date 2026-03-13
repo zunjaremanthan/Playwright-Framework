@@ -1,6 +1,7 @@
 const {test, expect}=require('@playwright/test')
 test('AssertionsTest', async({page})=>{
 
+    test.setTimeout(80000)
     await page.goto('https://demo.nopcommerce.com/')
 
     //1. Page has title
@@ -16,6 +17,9 @@ test('AssertionsTest', async({page})=>{
     //4. control is enabled
     const enable=await page.locator('#small-searchterms')
     await expect(enable).toBeEnabled()
+
+    //clcickon register
+    await page.locator("//a[@class='ico-register']").click()
 
     //5.Radio/Checkbox is checked
     //Radio
