@@ -10,7 +10,7 @@ test('Handleradiobuttons', async({page})=>{
     await expect(await page.locator('#male').isChecked()).toBeTruthy()  //male
     await expect(await page.locator('#female').isChecked()).toBeFalsy()  //female
 
-    await page.waitForTimeout(2000)   //pausing execution for specified time
+    await page.waitForTimeout(2000)   //Pausing execution for specified time test
 
 
 })
